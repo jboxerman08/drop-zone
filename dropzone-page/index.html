@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Drop Zone</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Rozha+One&display=swap" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="title">
+    <h1 class="drop">DROP</h1>
+    <h1 class="zone">ZONE</h1>
+  </div>
+
+  <div class="countdown-container">
+    <div class="shoename">
+      <h1>Leezy Boost 103</h1>
+    </div>
+
+    <div class="countdown-js">
+      <!-- # Option B
+      # The timer counts down to midnight to a configurable date.
+      # Declare a date variable that can take a date of format MM/DD/YYYY. -->
+
+      <h1 id="countdown"></h1>
+      <script>
+        // Set the date we're counting down to
+        const countDownDate = new Date("Dec 28, 2021 00:00:00").getTime();
+
+        // Update the count down every 1 second
+        const x = setInterval(function () {
+
+          // Today's date and time
+          const now = new Date().getTime();
+
+          // Distance between now and the count down date
+          const distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+          document.getElementById("countdown").innerHTML = days + " " + hours + " "
+            + minutes + " " + seconds;
+
+          // If the count down is finished
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      </script>
+
+      <div class="time">
+        <p>Days</p>
+        <p>Hours</p>
+        <p>Mins</p>
+        <p>Secs</p>
+      </div>
+    </div>
+
+    <p>UNTIL DROP</p>
+  </div>
+
+  <div class="background-img"></div>
+</body>
+
+</html>
