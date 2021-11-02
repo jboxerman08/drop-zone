@@ -1,12 +1,10 @@
 /* Countdown container styling */
 .countdown-container {
-  display: flex;
   float: right;
-  flex-direction: column;
-  justify-content: center;
   margin-top: 300px;
   width: 600px;
   margin-right: -44px;
+  text-align: center;
 }
 
 /* Shoe name text styling */
@@ -18,7 +16,6 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 36px;
-  text-align: center;
 }
 
 /* Countdown timer styling */
@@ -34,29 +31,16 @@
   color: white;
   padding: 16px;
   text-align: center;
+  width: fit-content;
+}
+
+.container-day,.container-hour,.container-minute,.container-second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .countdown p {
-  font-size: 24px;
-  font-weight: 900;
-  text-align: center;
-}
-
-#countdown {
-  font-family: Rozha One;
-  letter-spacing: 0.15em;
-  background: black;
-  color: white;
-  padding: 16px;
-}
-
-/* Days under countdown styling */
-.time {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 22px;
-}
-.time p {
   font-size: 24px;
   font-weight: 900;
 }
