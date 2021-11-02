@@ -15,13 +15,13 @@
   line-height: 40px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 /* Countdown timer styling */
 .countdown {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .time-digits {
@@ -30,22 +30,33 @@
 
 .day1,.day2,.hour1,.hour2,.minute1,.minute2,.second1,.second2 {
   font-family: Rozha One;
-  letter-spacing: 0.15em;
   background: black;
-  background-size: 58px 73px;
+  width: 58px;
+  height: 72px;
   color: white;
-  padding: 16px;
-  text-align: center;
-  margin: 16px 6px;
+  margin: 0px 6px;
+}
+
+.day1 {
+  margin-left: 0px;
+}
+
+.second2 {
+  margin-right: 0px;
 }
 
 .container-day,.container-hour,.container-minute,.container-second {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 36px 6px 22px;
+}
+
+.countdown-container h3 {
+  font-size: 48px;
+  padding: 16px;
+  line-height: 0.9;
 }
 
 .countdown p {
   font-size: 24px;
   font-weight: 900;
+  margin: 0;
 }
