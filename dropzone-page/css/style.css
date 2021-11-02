@@ -11,10 +11,23 @@
   }
   .countdown-container {
     margin-top: 320px;
+    margin-right: 0;
+    width: 100%;
   }
   .shoename h1 {
     font-size: 24px;
     width: 100vw;
+    margin-bottom: 12px;
+  }
+  .time {
+    justify-content: space-evenly;
+  }
+  .time p {
+    font-size: 14px;
+  }
+  #countdown {
+    font-size: 24px;
+    padding: 8px;
   }
 }
 
