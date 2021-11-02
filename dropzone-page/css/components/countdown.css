@@ -8,13 +8,14 @@
 }
 
 /* Shoe name text styling */
-.shoename h1 {
+.shoename {
   font-family: Roboto;
   font-weight: 900;
   font-size: 48px;
   line-height: 40px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  margin-bottom: 36px;
 }
 
 /* Countdown timer styling */
@@ -26,12 +27,14 @@
   letter-spacing: 0.15em;
   background: black;
   color: white;
+  padding: 16px;
 }
 
 /* Days under countdown styling */
 .time {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 22px;
 }
 .time p {
   font-size: 24px;
