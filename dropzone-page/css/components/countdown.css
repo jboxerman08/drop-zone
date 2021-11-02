@@ -1,7 +1,9 @@
 /* Countdown container styling */
 .countdown-container {
+  display: flex;
   float: right;
-  text-align: center;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 300px;
   width: 600px;
   margin-right: -44px;
@@ -16,12 +18,30 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 36px;
+  text-align: center;
 }
 
 /* Countdown timer styling */
-.countdown-js {
-  display: grid;
+.countdown {
+  display: flex;
+  justify-content: space-around;
 }
+
+.day,.hour,.minute,.second {
+  font-family: Rozha One;
+  letter-spacing: 0.15em;
+  background: black;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+.countdown p {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+
 #countdown {
   font-family: Rozha One;
   letter-spacing: 0.15em;
