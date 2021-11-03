@@ -24,7 +24,7 @@ const countdown = () => {
     return number.toLocaleString(undefined, { minimumIntegerDigits: minIntegerDigits });
   };
 
-  // Replace text in html from time to
+  // Replace inner text in html with countdown digits, each digit split in 2
   document.querySelector('.day1').innerText = integerToMinimumIntegerDigits(textDay, 2).split('')[0];
   document.querySelector('.day2').innerText = integerToMinimumIntegerDigits(textDay, 2).split('')[1];
   document.querySelector('.hour1').innerText = integerToMinimumIntegerDigits(textHour, 2).split('')[0];
@@ -35,10 +35,10 @@ const countdown = () => {
   document.querySelector('.second2').innerText = integerToMinimumIntegerDigits(textSecond, 2).split('')[1];
 
   // If the count down is finished
-//   if (distance < 0) {
-//     clearInterval(x);
-//     document.getElementById("countdown").innerHTML = "EXPIRED";
-//   }
+  if (timeDiff < 0) {
+    clearInterval();
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
 }
 
 setInterval(countdown, 1000);

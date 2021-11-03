@@ -1,0 +1,9 @@
+.shoename {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 40px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-left: 10px;
+}

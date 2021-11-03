@@ -1,21 +1,51 @@
 /* Stylesheets */
 @import url("pages/homepage.css");
-@import url("components/countdown.css");
+@import url("components/countdown-container.css");
+@import url("components/countdown-timer");
+@import url("components/shoename.css");
+@import url("components/dropzone-title.css");
+
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 414px) {
+@media (max-width: 375px) {
   .background-img {
     height: 118vh;
     top: -32px;
   }
-  .countdown-container {
-    margin-top: 320px;
-    margin-right: 0;
+  .content-container {
+    display: flex;
     width: 100%;
+  }
+  .countdown {
+    justify-content: space-evenly;
+    margin: 0px 30px;
+  }
+  .countdown-container {
+    margin-top: 336px;
+    margin-right: 0;
   }
   .shoename {
     font-size: 24px;
-    margin-bottom: 12px;
+    margin-left: 6px;
+    letter-spacing: 0.12em;
+  }
+  .day1,.day2,.hour1,.hour2,.minute1,.minute2,.second1,.second2 {
+    width: 32px;
+    height: 40px;
+    margin: 0px 3px 8px;
+  }
+  .container-day,.container-hour,.container-minute,.container-second {
+    margin: 18px 2px 14px;
+  }
+  .countdown-container h3 {
+    font-size: 24px;
+    padding: 10px;
+    line-height: 0.9;
+  }
+  .countdown p {
+    font-size: 14px;
+    font-weight: 900;
+    margin: 0;
   }
 }
 
