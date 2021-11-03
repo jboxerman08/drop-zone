@@ -10,7 +10,6 @@
 }
 
 .day1,.day2,.hour1,.hour2,.minute1,.minute2,.second1,.second2 {
-  /* font-family: Rozha One; */
   background: black;
   width: 58px;
   height: 72px;
