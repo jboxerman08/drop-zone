@@ -36,8 +36,14 @@ const countdown = () => {
 
   // If the count down is finished
   if (timeDiff < 0) {
-    clearInterval();
-    document.getElementById("countdown").innerHTML = "EXPIRED";
+    document.querySelector('.day1').innerText = "E";
+    document.querySelector('.day2').innerText = "X";
+    document.querySelector('.hour1').innerText = "P";
+    document.querySelector('.hour2').innerText = "I";
+    document.querySelector('.minute1').innerText = "R";
+    document.querySelector('.minute2').innerText = "E";
+    document.querySelector('.second1').innerText = "D";
+    document.querySelector('.second2').innerText = "!";
   }
 }
 

@@ -1,7 +1,6 @@
 /* Stylesheets */
 @import url("pages/dropzone-general.css");
 @import url("components/countdown-container.css");
-@import url("components/countdown-timer");
 @import url("components/shoename.css");
 @import url("components/dropzone-title.css");
 
@@ -24,11 +23,10 @@
   }
 
   .countdown-container {
-    margin-top: 336px;
-    margin-right: 0;
+    margin: 336px 0px 0px 0px;
   }
 
-  .shoename {
+  .shoename p {
     font-size: 24px;
     margin-right: 4px;
     letter-spacing: 0.12em;
@@ -53,15 +51,5 @@
   .countdown p {
     font-size: 14px;
     font-weight: 900;
-    margin: 0;
   }
 }
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1440px) { ... }
