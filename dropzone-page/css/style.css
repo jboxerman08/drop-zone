@@ -5,8 +5,8 @@
 @import url("components/dropzone-title.css");
 
 
-/* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 375px) {
+/* // Small devices (styling made specifically for iPhone 6/7/8 & plus models) */
+@media (max-width: 414px) {
   .background-img {
     height: 118vh;
     top: -32px;
